@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa JavaScript Básico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Programa JavaScript Básico</h1>
+    
+    <button id="meuBotao">Clique-me!</button>
+
+    <p id="minhaMensagem"></p>
+
+    <script>
+        // Função que será executada quando o botão for clicado
+        function exibirMensagem() {
+            // Obtém o elemento de parágrafo
+            var mensagemElemento = document.getElementById("minhaMensagem");
+
+            // Define o texto a ser exibido
+            mensagemElemento.innerHTML = "Olá, você clicou no botão!";
+        }
+
+        // Obtém o botão pelo ID
+        var botao = document.getElementById("meuBotao");
+
+        // Adiciona um ouvinte de eventos para o clique no botão
+        botao.addEventListener("click", exibirMensagem);
+    </script>
+
+</body>
+</html>
